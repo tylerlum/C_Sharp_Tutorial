@@ -14,10 +14,20 @@ namespace Giraffe
 
             for (int i = 0; i < luckyNumbers.Length; i++)
             {
-                Console.WriteLine(luckyNumbers[i]);
+                Console.WriteLine(GetPow(luckyNumbers[i], 3));
             }
 
             Console.ReadLine();
+        }
+
+        static int GetPow(int baseNum, int powNum)
+        {
+            int retVal = 1;
+            for (int i = 0; i < powNum; i++)
+            {
+                retVal *= baseNum;
+            }
+            return retVal;
         }
     }
 }
