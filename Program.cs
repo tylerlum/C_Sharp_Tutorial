@@ -10,20 +10,34 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            bool isMale = true;
-            bool isTall = false;
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
-            if (isMale && isTall)
+            Console.Write("Enter an operator: ");
+            string op = Console.ReadLine();
+
+            Console.Write("Enter a number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if (op == "+")
             {
-                Console.WriteLine("You are a tall male");
+                Console.WriteLine(num1 + num2);
             }
-            else if (isMale)
+            else if (op == "-")
             {
-                Console.WriteLine("You are a short male");
+                Console.WriteLine(num1 - num2);
+            }
+            else if (op == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            }
+            else if (op == "*")
+            {
+                Console.WriteLine(num1 * num2);
             }
             else
             {
-                Console.WriteLine("You are a female");
+                Console.WriteLine("Invalid operator");
             }
 
             Console.ReadLine();
