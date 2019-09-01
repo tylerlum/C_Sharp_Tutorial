@@ -10,35 +10,11 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            string secretWord = "giraffe";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outOfGuesses = false;
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
 
-            while (guess != secretWord && !outOfGuesses)
+            for (int i = 0; i < luckyNumbers.Length; i++)
             {
-                if (guessCount < guessLimit)
-                {
-                    Console.Write("Enter guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                }
-                else
-                {
-                    outOfGuesses = true;
-                }
-
-            }
-
-
-            if (outOfGuesses)
-            {
-                Console.Write("You lose!");
-            }
-            else
-            {
-                Console.Write("You win!");
+                Console.WriteLine(luckyNumbers[i]);
             }
 
             Console.ReadLine();
