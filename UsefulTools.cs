@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Giraffe
 {
-    class Program
+    class UsefulTools
     {
-        static void Main(string[] args)
+        public static void SayHi(string name)
         {
-            UsefulTools.SayHi("Mike");
-            Console.ReadLine();
+            Console.WriteLine("Hello " + name);
         }
-
     }
 }
