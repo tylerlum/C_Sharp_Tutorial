@@ -10,14 +10,28 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            SayHi();
+            bool isMale = true;
+            bool isTall = false;
+
+            if (isMale && isTall)
+            {
+                Console.WriteLine("You are a tall male");
+            }
+            else if (isMale)
+            {
+                Console.WriteLine("You are a short male");
+            }
+            else
+            {
+                Console.WriteLine("You are a female");
+            }
 
             Console.ReadLine();
         }
 
-        static void SayHi()
+        static void SayHi(string name)
         {
-            Console.WriteLine("Hello user");
+            Console.WriteLine("Hello user " + name);
         }
     }
 }
