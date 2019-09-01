@@ -10,7 +10,12 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            UsefulTools.SayHi("Mike");
+            Chef chef = new Chef();
+            chef.MakeSpecialDish();
+
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeSpecialDish();
+
             Console.ReadLine();
         }
 
