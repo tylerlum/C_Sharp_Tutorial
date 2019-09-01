@@ -10,11 +10,21 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            Student student1 = new Student("Jim", "Business", 2.8);
-            Student student2 = new Student("Pam", "Art", 3.6);
+            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
+            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
 
-            Console.WriteLine(student1.HasHonors());
-            Console.WriteLine(student2.HasHonors());
+            /* Can't do
+            Console.WriteLine(avengers.rating);
+            avengers.rating = "PG";
+            */
+
+            shrek.Rating = "Cat";
+            Console.WriteLine(shrek.Rating);
+
+            Console.WriteLine(avengers.Rating);
+            avengers.Rating = "R";
+            Console.WriteLine(avengers.Rating);
+
             Console.ReadLine();
         }
 
