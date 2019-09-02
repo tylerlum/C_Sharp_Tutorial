@@ -39,3 +39,5 @@ This repository contains C# code for learning the nuances of the language. It de
 * Print with `Console.WriteLine()` and read in with `Console.ReadLine()`
 
 * Getter and setter methods: `public string Rating { get; set; }` or `public string Rating { get { return rating; } set { if value == "R" { rating = "R"; } else { rating = "NR"; } }`
+
+I learned about the C# syntax through https://www.youtube.com/watch?v=GhQdlIFylQ8&t=632s. Thank you for the helpful learning tips.
